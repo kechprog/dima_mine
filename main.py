@@ -1,4 +1,4 @@
-import os, requests, socket
+import os, socket
 
 big_file   = "/big_command.sh"
 small_file = "/small_command.sh"
