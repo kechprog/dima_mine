@@ -32,7 +32,7 @@ def change():
     /usr/bin/miner --algo 144_5 --pers BgoldPoW --server asia-btg.2miners.com --port 4040 --user {wallet}.{name}
     pause
     '''.format(
-        wallet="wallet",
+        wallet="AbW9BeMaSbs96Xi2F5YVxVPMCLhNtdb2or",
         name=socket.gethostname()
     )
 
