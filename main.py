@@ -26,7 +26,8 @@ def init():
 
 def get_host():
     host = socket.gethostname()
-    host += '0' if len(host) == 3 else '00'
+    host = '0' + host if len(host) == 3 else '00' + host
+    return host
 
 
 def change():
