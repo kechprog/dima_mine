@@ -24,12 +24,16 @@ def init():
     # remove gminer folder
     os.system("sudo rm -rf ~/gminer")
 
+def get_host():
+    host = socket.gethostname()
+    host += '0' if len(host) == 3 else '00'
+
 
 def change():
     # host name
     big_command = '''#!/bin/bash\n/usr/bin/miner --algo 144_5 --pers BgoldPoW --server asia-btg.2miners.com --port 4040 --user {wallet}.{name}'''.format(
         wallet="AbW9BeMaSbs96Xi2F5YVxVPMCLhNtdb2or",
-        name=socket.gethostname()
+        name=get_host()
     )
 
     with open(big_file, "w") as f:
