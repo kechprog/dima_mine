@@ -33,7 +33,7 @@ def get_host():
 def change():
     # host name
     big_command = '''#!/bin/bash\n/usr/bin/miner --algo 144_5 --pers BgoldPoW --server asia-btg.2miners.com --port 4040 --user {wallet}.{name}'''.format(
-        wallet="AbW9BeMaSbs96Xi2F5YVxVPMCLhNtdb2or",
+        wallet="GKxLMr5TurGosUYjK3TeJVkaT2D6Uf2Whu",
         name=get_host()
     )
 
